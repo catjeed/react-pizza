@@ -1,29 +1,12 @@
 import React from 'react';
 import Card from './components/Card';
+import Header from './components/Header';
 function App() {
   return (
     <div className="App">
       <div className="page">
         <div className="content">
-          <div className="header">
-            <div className="headerTitle">
-              <img src="/images/logo.svg" alt="лого" className="logo" />
-              <div>
-                <h2 className="title">React Pizza</h2>
-                <p className="subtitle">самая вкусная пицца во вселенной</p>
-              </div>
-            </div>
-            <div>
-              <ul className="cartButton">
-                <li className="cartButtonUnit">520 &#8381;</li>
-                <span className="lineBetween"></span>
-                <li className="cartButtonUnit">
-                  <img src="/images/cart.svg" alt="Корзина" />
-                  <p>3</p>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <Header />
           <div className="pizzaSort">
             <ul className="pizzaTypes">
               <li className="pizzaType">Все</li>
@@ -41,8 +24,8 @@ function App() {
               </ul>
             </div>
           </div>
-          <h1 className="mainTitle">Все пиццы</h1>
           <div className="main">
+            <h1 className="mainTitle">Все пиццы</h1>
             <div className="cards">
               <Card name={'Чизбургер-пицца'} imageUrl={'./images/pizza.png'} />
               <Card name={'Сырная'} imageUrl={'./images/cheese.png'} />
