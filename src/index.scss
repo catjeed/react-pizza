@@ -36,7 +36,7 @@ p {
   width: 1340px;
   background: #fff;
   margin: 45px;
-  padding: 48px;
+  padding: 50px;
   border-radius: 10px;
   box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.03);
 }
@@ -71,6 +71,13 @@ p {
   display: flex;
   align-items: center;
   cursor: pointer;
+  font-family: Proxima Nova;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: rgba(24, 24, 24, 1);
 }
 
 .logo {
@@ -81,12 +88,12 @@ p {
 
 .cartButton {
   display: flex;
-  width: 150px;
+  width: 100px;
   height: 50px;
   background: rgba(254, 95, 30, 1);
   border-radius: 30px;
   color: #fff;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   cursor: pointer;
   font-family: Proxima Nova;
@@ -95,6 +102,7 @@ p {
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
+  padding: 0 25px;
 }
 
 .lineBetween {
@@ -156,9 +164,6 @@ p {
     transition: 0.1s ease-in-out;
 }
 
-.main {
-  margin-top: 32px;
-}
 
 .mainTitle {
   font-family: Proxima Nova;
@@ -167,6 +172,7 @@ p {
   line-height: 39px;
   letter-spacing: 0.01em;
   text-align: left;
+  margin: 32px 0 35px;
 }
 
 .sort {
@@ -202,10 +208,6 @@ p {
   height: 260px;
 }
 
-.mainTitle {
-  margin: 35px 0;
-}
-
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -221,13 +223,13 @@ p {
 }
 
 .cardItemName {
-  margin-bottom: 22px;
+  margin: 11px 0 22px;
 }
 
 .cardItemProps {
   background: rgba(243, 243, 243, 1);
   width: 280px;
-  height: 80px;
+  height: 85px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -255,7 +257,8 @@ p {
   line-height: 17px;
   letter-spacing: 0.015em;
   text-align: center;
-  color: rgba(44, 44, 44, 1);
+  text-align: center;
+  color: rgba(44, 44, 44, 0.9);
 
 }
 .cardItemPropType:first-child {

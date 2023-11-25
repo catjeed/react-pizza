@@ -7,8 +7,8 @@ function Card({ name, imageUrl }) {
       <h3 className="cardItemName">{name}</h3>
       <div className="cardItemProps">
         <ul className="cardItemProp">
-          <li className="cardItemPropType doughType">Тонкое</li>
-          <li className="cardItemPropType doughType">Традиционное</li>
+          <li className="cardItemPropType doughType">тонкое</li>
+          <li className="cardItemPropType doughType">традиционное</li>
         </ul>
         <ul className="cardItemProp">
           <li className="cardItemPropType doughSize">26 см.</li>
