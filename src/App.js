@@ -1,6 +1,8 @@
 import React from 'react';
-import Card from './components/Card';
+import Main from './components/Main';
 import Header from './components/Header';
+import Cart from './components/pages/Cart/Cart.jsx';
+import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
@@ -24,21 +26,11 @@ function App() {
               </ul>
             </div>
           </div>
-          <div className="main">
-            <h1 className="mainTitle">Все пиццы</h1>
-            <div className="cards">
-              <Card name={'Чизбургер-пицца'} imageUrl={'./images/pizza.png'} />
-              <Card name={'Сырная'} imageUrl={'./images/cheese.png'} />
-              <Card
-                name={'Креветки по-азиатски'}
-                imageUrl={'./images/krevedko.png'}
-              />
-              <Card
-                name={'Сырный цыпленок'}
-                imageUrl={'./images/cheesyChicken.png'}
-              />
-            </div>
-          </div>
+          <Routes>
+            <Route path='/' element={<Main />} />
+            <Route path='/cart' element={<Cart />} />
+          </Routes>
+
         </div>
       </div>
     </div>
